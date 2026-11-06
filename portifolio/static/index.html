@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>~/dev · Portfolio</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div id="scan" aria-hidden="true"></div>
+  <div id="acc" role="status">
+    <h2><span id="typed"></span><span class="cur"></span></h2>
+  </div>
+
+  <div id="intro">
+    <div class="top"><span>~/PORTFOLIO/<span style="color:var(--ac)">INIT</span></span>
+      <div class="lang"></div>
+    </div>
+    <div class="win">
+      <div class="bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>visitor@portfolio:
+          ~</span><span class="ok" data-k="ready"></span></div>
+      <div class="body">
+        <div style="font-size:12px;color:var(--dim)">Last login: <span id="date"></span> on ttys001</div>
+        <h1 class="hw">Hello, World!</h1>
+        <div style="font-size:12px;color:var(--dim)" data-k="hint"></div>
+        <form id="gate" class="row" style="margin-top:50px" autocomplete="off">
+          <b>visitor@portfolio:~$</b><span class="cw" style="max-width:200px"><input id="gin" maxlength="8"
+              placeholder="hi" aria-label="hi" autofocus><span class="cur" aria-hidden="true"></span></span>
+          <span style="flex:1"></span><button class="btn" style="border:0;padding:0;font-weight:400;color:var(--dim)"
+            data-k="exec"></button>
+        </form>
+      </div>
+    </div>
+    <div class="foot">PORTFOLIO_OS V1.0.0 · 2026</div>
+  </div>
+
+  <header><a class="logo" href="#top">~<span>/</span>dev</a>
+    <nav><a href="#sobre" data-k="n1"></a><a href="#trabalho" data-k="n2"></a><a href="#contato" data-k="n3"></a></nav>
+    <div class="lang"></div>
+  </header>
+  <main id="app"></main>
+
+  <script src="static/js/app.js" defer></script>
+</body>
+
+</html>
